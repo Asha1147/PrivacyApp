@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Privacy Manager</string>
+    <string name="confirm_biometrics">Confirm Biometrics</string>
+    <string name="confirm_lock">Please Authenticate</string>
+    <string name="cancel">cancel</string>
+    <string name="title_activity_home">Saved Information</string>
+    <string name="tab_text_1">Passwords</string>
+    <string name="tab_text_2">Cards</string>
+</resources>
