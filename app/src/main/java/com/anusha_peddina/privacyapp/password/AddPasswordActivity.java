@@ -89,6 +89,8 @@ public class AddPasswordActivity extends AppCompatActivity {
                 !accountUsername.getText().toString().isEmpty() &&
                 !accountPassword.getText().toString().isEmpty()) {
             passwordButton.setEnabled(true);
+        } else {
+            passwordButton.setEnabled(false);
         }
     }
 

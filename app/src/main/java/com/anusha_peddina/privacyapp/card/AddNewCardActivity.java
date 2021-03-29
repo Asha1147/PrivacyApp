@@ -55,6 +55,19 @@ public class AddNewCardActivity extends AppCompatActivity {
             oldCardList.add(card);
             PaSharedPreferences.saveCardListInPreference(this, oldCardList);
             closeActivity();
+        } else {
+            if(cardName.toString().isEmpty()) {
+                cardName.setError("Please enter card name");
+            }
+            if(cardNumber.toString().isEmpty()) {
+                cardNumber.setError("Please enter card number");
+            }
+            if(cardExpiry.toString().isEmpty()) {
+                cardExpiry.setError("Please enter card Expiry");
+            }
+            if(cardCVV.toString().isEmpty()) {
+                cardCVV.setError("Please enter card CVV");
+            }
         }
     }
 
@@ -107,6 +120,8 @@ public class AddNewCardActivity extends AppCompatActivity {
                 !cardExpiry.getText().toString().isEmpty() &&
                 !cardCVV.getText().toString().isEmpty()) {
             addCardButton.setEnabled(true);
+        } else {
+            addCardButton.setEnabled(false);
         }
     }
 
